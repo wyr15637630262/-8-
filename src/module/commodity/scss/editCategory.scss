@@ -1,0 +1,99 @@
+@import "./../../../../static/scss/main.scss";
+.editType_content{
+  @include boxStyle(1500px);
+  .editTypeContent{
+    width: 93%;
+    margin: 30px auto;
+    .categoryName{
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      input{
+        @include inputStyle(155px,28px,1px solid #cccccc);
+        @include border-radius;
+        padding-left: 10px;
+      }
+    }
+    .categoryPicture{
+      height: 80px;
+      display: flex;
+      margin-top: 20px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      .picture{
+        width: 90px;
+        height: 80px;
+        margin-left: 8px;
+        span{
+          width: 80px;
+          height: 80px;
+          display: block;
+          line-height: 80px;
+          text-align: center;
+          color: #cccccc;
+          border: 1px solid #cccccc;
+          font-size: 30px;
+          cursor: pointer;
+        }
+        img{
+          width: 80px;
+          height: 80px;
+          display: inline-block;
+        }
+      }
+    }
+    .categoryParent{
+      height: 50px;
+      margin-top: 10px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      .el-select{
+        width: 167px;
+        &:nth-of-type(2){
+          margin-left: 20px;
+        }
+      }
+    }
+    .sortPriority{
+      height: 50px;
+      margin-top: 25px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      input{
+        @include inputStyle(155px,28px,1px solid #cccccc);
+        @include border-radius;
+        padding-left: 10px;
+      }
+    }
+    .editType_bottom{
+      height: 70px;
+      input{
+        float: left;
+        width: 60px;
+        height: 30px;
+        border: 0;
+        outline: none;
+        @include border-radius;
+        margin-top: 15px;
+        &:nth-of-type(1) {
+          background: #e1e1e1;
+          color: #7d7b7d;
+          margin-left: 70px;
+        }
+        &:nth-of-type(2) {
+          background: #ec6a47;
+          color: #ffffff;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import "./../../../../static/scss/main.scss";
+.roleDetail_content{
+  @include boxStyle(1000px);
+  h4{
+    width: 96%;
+    height: 50px;
+    line-height: 50px;
+    margin: 0px auto;
+    border-bottom: 1px solid #cccccc;
+  }
+}

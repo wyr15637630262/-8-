@@ -1,0 +1,119 @@
+@import "./../../../../static/scss/main.scss";
+.publish_content{
+  .publishContent{
+    width: 94%;
+    margin: 0 auto;
+    .firstPart{
+      border-bottom: 1px dashed #cccccc;
+      display: flex;
+      .firstPart_left{
+        width: 180px;
+        p{
+          height: 30px;
+          line-height: 30px;
+          margin-top: 30px;
+          font-size: 18px;
+          color: #444444;
+        }
+      }
+      .firstPart_right{
+        .commodityName{
+          height: 60px;
+          margin-top: 30px;
+          label{
+            @include label;
+            padding-right: 15px;
+          }
+          input{
+            @include inputStyle(153px,28px,1px solid #cccccc);
+            @include border-radius;
+            padding-left: 10px;
+            margin-left: 5px;
+          }
+        }
+        .commodityCode,.originalPrice,.memberPrice,.sortPriority{
+          height: 60px;
+          label{
+            @include label;
+            padding-right: 15px;
+          }
+          input{
+            @include inputStyle(153px,28px,1px solid #cccccc);
+            @include border-radius;
+            padding-left: 10px;
+            margin-left: 5px;
+          }
+        }
+        .commodityType,.commodityStatus{
+          height: 60px;
+          label{
+            @include label;
+            padding-right: 15px;
+          }
+          .el-select{
+            width: 165px;
+          }
+        }
+        .commodityType{
+          margin-top: 20px;
+        }
+        .commodityPicture{
+          height: 100px;
+          display: flex;
+          line-height: 100px;
+          label{
+            @include label;
+            padding-right: 15px;
+          }
+          .pic{
+            width: 500px;
+            height: 100px;
+            margin-left: 5px;
+            display: flex;
+            p{
+              width: 35px;
+              height: 100px;
+              color: #cccccc;
+              font-weight: 500;
+              line-height: 100px;
+              text-align: center;
+              font-size: 40px;
+              cursor: pointer;
+            }
+            .picOne,.picTwo,.picThree{
+              width: 100px;
+              height: 100px;
+              margin-left: 15px;
+              img{
+                width: 100px;
+                height: 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .secondPart{
+      width: 200px;
+      height: 45px;
+      padding-top: 15px;
+      margin: 30px auto;
+      input{
+        float: left;
+        @include inputStyle(70px,30px,0);
+        @include border-radius;
+        &:nth-of-type(1){
+          background: #eceef2;
+          color: #444344;
+          line-height: 30px;
+        }
+        &:nth-of-type(2){
+          background: #ec6a47;
+          color: #ffffff;
+          line-height: 30px;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}

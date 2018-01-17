@@ -1,0 +1,150 @@
+@import "./../../../../static/scss/main.scss";
+.paramConfig_content {
+  @include boxStyle(1000px);
+  .paramContent{
+    width: 700px;
+    margin: 30px 30px;
+    .paramName{
+      width: 700px;
+      height: 120px;
+      display: flex;
+      .paramName_left{
+        width: 65px;
+        height: 100%;
+      }
+      .paramName_right{
+        margin: 5px 0 0 25px;
+        .one, .two, .three{
+          height: 40px;
+        }
+      }
+    }
+    .paramCode{
+      width: 700px;
+      height: 30px;
+      margin-top: 15px;
+      display: flex;
+      .paramCode_left{
+        width: 65px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .paramCode_right{
+        margin-left: 25px;
+        input{
+          @include inputStyle(155px,28px,1px solid #cccccc);
+          @include border-radius;
+          padding-left: 10px;
+        }
+      }
+    }
+    .paramValue{
+      width: 700px;
+      height: 30px;
+      margin-top: 20px;
+      display: flex;
+      .paramValue_left{
+        width: 65px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .paramValue_right{
+        margin-left: 25px;
+        input{
+          @include inputStyle(155px,28px,1px solid #cccccc);
+          @include border-radius;
+          padding-left: 10px;
+        }
+        a{
+          padding: 0 10px;
+        }
+      }
+    }
+    .paramStatus{
+      width: 700px;
+      height: 30px;
+      margin-top: 20px;
+      display: flex;
+      .paramStatus_left{
+        width: 65px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .paramStatus_right{
+        margin-left: 25px;
+        .el-select{
+          width: 167px;
+        }
+      }
+    }
+    .paramWeight{
+      width: 700px;
+      height: 30px;
+      margin-top: 20px;
+      display: flex;
+      .paramWeight_left{
+        width: 65px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .paramWeight_right{
+        margin-left: 25px;
+        input{
+          @include inputStyle(155px,28px,1px solid #cccccc);
+          @include border-radius;
+          padding-left: 10px;
+        }
+      }
+    }
+    .paramRemarks{
+      width: 700px;
+      height: 50px;
+      margin-top: 30px;
+      display: flex;
+      .paramRemarks_left{
+        width: 65px;
+        height: 100%;
+      }
+      .paramRemarks_right{
+        margin-left: 25px;
+        textarea{
+          width: 300px;
+          height: 50px;
+          border-color: #cccccc;
+          text-indent: 10px;
+          outline: none;
+          @include border-radius;
+          &::-webkit-scrollbar{
+            width: 0px;
+            height: 0px;
+          }
+        }
+      }
+    }
+    .paramLast{
+      width: 150px;
+      height: 50px;
+      margin: 40px 100px;
+      input{
+        float: left;
+        display: inline-block;
+        outline: none;
+        width: 62px;
+        height: 30px;
+        border: 0;
+        @include border-radius;
+        margin-top: 15px;
+        font-size: 12px;
+        &:nth-of-type(1) {
+          background: #e1e1e1;
+          color: #7d7b7d;
+        }
+        &:nth-of-type(2) {
+          background: #ec6a47;
+          color: #FFFFFF;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

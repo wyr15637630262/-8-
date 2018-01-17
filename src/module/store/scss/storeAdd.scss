@@ -1,0 +1,187 @@
+/*添加店铺*/
+@import "../../../../static/scss/main";
+.storeAdd_content{
+  @include boxStyle(1600px);
+  .storeAddContent{
+    width: 93%;
+    margin: 20px auto;
+    .branchName{
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      input{
+        @include inputStyle(155px,28px,1px solid #cccccc);
+        @include border-radius;
+        padding-left: 10px;
+      }
+    }
+    .branchCode,.sortOrder{
+      margin-top: 10px;
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      input{
+        @include inputStyle(155px,28px,1px solid #cccccc);
+        @include border-radius;
+        padding-left: 10px;
+      }
+    }
+    .status{
+      margin-top: 10px;
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+    }
+    .property,.branchType,.manageMode{
+      margin-top: 10px;
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+    }
+    .group{
+      margin-top: 10px;
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      .el-select{
+        width: 167px;
+      }
+    }
+    .detailAdress{
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      input{
+        @include inputStyle(250px,28px,1px solid #cccccc);
+        @include border-radius;
+        padding-left: 10px;
+      }
+    }
+    .picture{
+      margin-top: 10px;
+      height: 100px;
+      line-height: 100px;
+      display: flex;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      .pic{
+        width: 500px;
+        height: 100px;
+        margin-left: 5px;
+        display: flex;
+        p{
+          width: 35px;
+          height: 100px;
+          color: #cccccc;
+          font-weight: 200;
+          line-height: 100px;
+          text-align: center;
+          font-size: 60px;
+          cursor: pointer;
+        }
+        .picOne,.picTwo,.picThree{
+          width: 100px;
+          height: 100px;
+          margin-left: 15px;
+          img{
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+    .acreage,.openingTime{
+      margin-top: 10px;
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      input{
+        @include inputStyle(155px,28px,1px solid #cccccc);
+        @include border-radius;
+        padding-left: 10px;
+      }
+    }
+    .acreage{
+      margin-top: 20px;
+    }
+    .district{
+      margin-top: 10px;
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      .labelStyle{
+        word-spacing: 24px;
+      }
+    }
+    .branchDes{
+      margin-top: 10px;
+      height: 100px;
+      label{
+        @include label;
+        padding-right: 15px;
+        vertical-align: top;
+      }
+      textarea{
+        width: 300px;
+        height:100px;
+        overflow: hidden;
+        border-color: #cccccc;
+        text-indent: 10px;
+        outline: none;
+      }
+    }
+    .reservePrice{
+      margin-top: 10px;
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      input{
+        @include inputStyle(155px,28px,1px solid #cccccc);
+        @include border-radius;
+        padding-left: 10px;
+      }
+    }
+  }
+  .commonMap{
+    width: 100%;
+    height: 400px;
+  }
+  .storeAdd_button{
+    width: 98%;
+    height: 30px;
+    background: papayawhip;
+    margin: 30px auto;
+    padding: 15px 0;
+    input{
+      width: 80px;
+      height: 30px;
+      background: #ec6a47;
+      border:0;
+      @include border-radius;
+      display: block;
+      margin: 0 auto;
+      color: #ffffff;
+      outline: none;
+    }
+  }
+}

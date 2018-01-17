@@ -1,0 +1,69 @@
+@import "../../../../static/scss/main";
+.detail_content{
+  @include boxStyle(1000px);
+  .detailContent{
+    width: 900px;
+    height: 900px;
+    //background: plum;
+    margin: 15px 0px 0px 10px;
+    .firstPart{
+      width: 100%;
+      height: 55px;
+      margin-bottom: 20px;
+      display: flex;
+      .firstPart_left{
+        width: 50%;
+      }
+      .firstPart_right{
+        width: 50%;
+      }
+    }
+    .secondPart{
+      width: 100%;
+      height: 55px;
+      margin-bottom: 20px;
+      display: flex;
+      .secondPart_left{
+        width: 50%;
+      }
+      .secondPart_right{
+        width: 50%;
+      }
+    }
+    .thirdPart{
+      width: 100%;
+      height: 55px;
+      margin-bottom: 20px;
+      display: flex;
+      .thirdPart_left{
+        width: 50%;
+      }
+      .thirdPart_right{
+        width: 50%;
+      }
+    }
+    .fourthPart{
+      width: 100%;
+      height: 100px;
+      margin-bottom: 20px;
+      a{
+        vertical-align: top;
+      }
+      img{
+        width: 100px;
+        height: 100px;
+        margin-left: 25px;
+      }
+    }
+    .fifthPart{
+      width: 100%;
+      height: 400px;
+      .adressPicture{
+        width: 100%;
+        height: 340px;
+        background: palegreen;
+        margin-top: 15px;
+      }
+    }
+  }
+}

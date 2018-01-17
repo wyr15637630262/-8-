@@ -1,0 +1,135 @@
+@import "../../../static/scss/main";
+.pictureSource{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.3);
+  left:0;
+  top:0;
+  .pictureSource_con{
+    width: 888px;
+    height: 650px;
+    background: #fff;
+    position: absolute;
+    left:0;
+    top:0;
+    right: 0;
+    bottom:0;
+    margin: auto;
+    border-radius: 3px;
+    .picture_title{
+      width: 888px;
+      height: 60px;
+      line-height: 60px;
+      border-bottom: 1px solid #cccccc;
+      p{
+        width: 858px;
+        font-size: 20px;
+        color: #888888;
+        margin: 0;
+        padding-left: 30px;
+      }
+    }
+    .picture_main{
+      width: 100%;
+      height: 519px;
+      border-bottom: 1px solid #cccccc;
+      display: flex;
+      .pictureMain_left{
+        width: 150px;
+        background: #f4f0ee;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        li{
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+          color: #888888;
+          font-size: 16px;
+          text-align: center;
+          cursor: pointer;
+        }
+        .active{
+          background: #ffffff;
+          color: #888888;
+        }
+      }
+      .pictureMain_right{
+        width: 738px;
+        height: 519px;
+        .picture_top{
+          width: 738px;
+          height: 469px;
+          display: flex;
+          flex-wrap: wrap;
+          .image{
+            width: 122px;
+            height: 150px;
+            margin: 15px 0 0 15px;
+            position: relative;
+            .mainImg{
+              width: 118px;
+              height: 118px;
+              border: 2px solid #ffffff;
+            }
+            .imgChecked{
+              width: 118px;
+              height: 118px;
+              border:2px solid #ec6a47;
+            }
+            p{
+              height: 18px;
+              line-height: 18px;
+              width: 122px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow:ellipsis;
+              margin: 0;
+              text-align: center;
+            }
+            .checked{
+              position: absolute;
+              right: 4px;
+              bottom: 32px;
+              width: 28px;
+              height: 15px;
+              display: none;
+            }
+          }
+        }
+        .picture_bottom{
+          width: 708px;
+          height: 50px;
+          margin: 0 auto;
+          .pages{
+            text-align: right;
+          }
+        }
+      }
+    }
+    .picture_bottom{
+      width: 100%;
+      height: 70px;
+      input{
+        float: left;
+        width: 60px;
+        height: 30px;
+        border: 0;
+        outline: none;
+        @include border-radius;
+        margin-top: 20px;
+        &:nth-of-type(1) {
+          background: #e1e1e1;
+          color: #7d7b7d;
+          margin-left: 376px;
+        }
+        &:nth-of-type(2) {
+          background: #ec6a47;
+          color: #ffffff;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

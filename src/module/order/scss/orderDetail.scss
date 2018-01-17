@@ -1,0 +1,262 @@
+/*订单详情列表*/
+@import "../../../../static/scss/main";
+.orderDetail_content{
+  @include boxStyle(2000px);
+  .orderMessage{
+    width: 96%;
+    margin: 20px auto;
+    h4{
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      font-size: 16px;
+      color: #888888;
+      border-bottom: 2px solid #cccccc;
+    }
+    .order_content{
+      width: 700px;
+      margin-left: 30px;
+      display: flex;
+      .orderContent_left{
+        width: 300px;
+        .firstPart{
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
+        .thirdPart{
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
+        .fourthPart{
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+      .orderContent_right{
+        width: 300px;
+        .firstPart{
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
+        .secondPart{
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
+        .thirdPart{
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+    }
+    .mark{
+      width: 700px;
+      margin: 15px 0 0 30px;
+      display: flex;
+      .mark_left{
+        width: 80px;
+        display: flex;
+        a{
+          display: block;
+          &:nth-of-type(1){
+            width: 64px;
+          }
+          &:nth-of-type(2){
+            width: 16px;
+          }
+        }
+      }
+    }
+    .feedBack{
+      width: 700px;
+      margin: 25px 0 0 30px;
+      display: flex;
+      .feedBack_left{
+        width: 80px;
+        display: flex;
+        a{
+          display: block;
+          &:nth-of-type(1){
+            width: 64px;
+          }
+          &:nth-of-type(2){
+            width: 16px;
+          }
+        }
+      }
+    }
+  }
+  .userMessage{
+    width: 96%;
+    margin: 0px auto;
+    h4{
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      font-size: 16px;
+      color: #888888;
+      border-bottom: 2px solid #cccccc;
+    }
+    .user_content{
+      width: 700px;
+      margin-left: 30px;
+      display: flex;
+      .userContent_left{
+        width: 300px;
+        .firstPart{
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
+        .secondPart{
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+      .userContent_right{
+        width: 300px;
+        .firstPart{
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+    }
+  }
+  .payMessage{
+    width: 96%;
+    margin: 20px auto;
+    h4{
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      font-size: 16px;
+      color: #888888;
+      border-bottom: 2px solid #cccccc;
+    }
+    .pay_content{
+      width: 700px;
+      margin-left: 30px;
+      display: flex;
+      .payContent_left{
+        width: 300px;
+        .firstPart{
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
+        .secondPart{
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
+        .thirdPart{
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+      .payContent_right{
+        width: 300px;
+        .firstPart{
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
+        .secondPart{
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
+        .thirdPart{
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+    }
+  }
+  .goodsMessage{
+    width: 96%;
+    margin: 0px auto;
+    h4{
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      font-size: 16px;
+      color: #888888;
+      border-bottom: 2px solid #cccccc;
+    }
+    .goodsList{
+      width: 800px;
+      margin: 20px 0 0 30px;
+      border-collapse: collapse;
+      border:1px solid #cccccc;
+      thead{
+        tr{
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+          display: block;
+          background: #f4f0ee;
+          font-size: 18px;
+          color: #2c3e50;
+          td{
+            text-align: center;
+          }
+        }
+      }
+      tbody{
+        display: block;
+        height: 240px;
+        overflow: auto;
+        &::-webkit-scrollbar {
+          width: 16px;
+          height: 16px;
+          background-color: #F5F5F5;
+        }
+        &::-webkit-scrollbar-thumb {
+          border-radius: 10px;
+          background-color: #cccccc;
+        }
+        tr{
+          width: 100%;
+          height: 60px;
+          line-height: 60px;
+          display: block;
+          color: #2c3e50;
+          &:nth-of-type(n){
+            background: #ffffff;
+          }
+          &:nth-of-type(2n){
+            background: #f8f8fb;
+          }
+          td{
+            text-align: center;
+          }
+        }
+      }
+    }
+    .actual{
+      width: 800px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 14px;
+      color: #2c3e50;
+      margin: 15px 0 0 30px;
+      text-align: right;
+    }
+  }
+  input{
+    margin: 20px 0 0 50px;
+    @include inputStyle(120px, 34px, 0);
+    background: #ec6a47;
+    color: #ffffff;
+  }
+}

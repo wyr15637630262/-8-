@@ -1,0 +1,90 @@
+@import "./../../../../static/scss/main.scss";
+.bannerAdd_content {
+  @include boxStyle(1000px);
+  .msgPart{
+    width: 96%;
+    margin: 0 auto;
+    .bannerTitle,.bannerUrl{
+      height: 60px;
+      margin-top: 30px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      input{
+        @include inputStyle(153px,28px,1px solid #cccccc);
+        @include border-radius;
+        padding-left: 10px;
+        margin-left: 5px;
+      }
+    }
+    .bannerMark{
+      height: 100px;
+      margin-top: 30px;
+      label{
+        @include label;
+        padding-right: 15px;
+        vertical-align: top;
+      }
+      textarea{
+        overflow: hidden;
+        border:1px solid #cccccc;
+      }
+    }
+    .bannerPicture{
+      height: 100px;
+      display: flex;
+      line-height: 100px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      .pic{
+        width: 500px;
+        height: 100px;
+        margin-left: 5px;
+        display: flex;
+        p{
+          width: 35px;
+          height: 100px;
+          color: #cccccc;
+          font-weight: 500;
+          line-height: 100px;
+          text-align: center;
+          font-size: 40px;
+          cursor: pointer;
+        }
+        .picOne,.picTwo,.picThree{
+          width: 100px;
+          height: 100px;
+          margin-left: 15px;
+          img{
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+  .msgBottom{
+    width: 96%;
+    height: 45px;
+    margin: 10px auto;
+    padding-top: 15px;
+    .msgBottom_content{
+      width: 150px;
+      height: 30px;
+      margin-left: 130px;
+      input{
+        float: left;
+        @include inputStyle(60px,30px,0);
+        @include border-radius;
+        &:nth-of-type(2){
+          margin-left: 30px;
+          background: #ec6a47;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

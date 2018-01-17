@@ -1,0 +1,4 @@
+@import "./../../../../static/scss/main.scss";
+.modifyParam_content{
+  @include boxStyle(1000px);
+}
